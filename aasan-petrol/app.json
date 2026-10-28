@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "AASAN PETROL",
+    "slug": "aasan-petrol",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "aasanpetrol",
+    "android": {
+      "package": "pk.aasanpetrol.app",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "AASAN PETROL needs camera access to capture fuel meter evidence.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "AASAN PETROL uses your location to record the station area for a refuelling transaction."
+        }
+      ],
+      "expo-secure-store",
+      "expo-asset"
+    ]
+  }
+}
